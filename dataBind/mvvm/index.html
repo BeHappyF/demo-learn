@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mvvm</title>
+</head>
+<body>
+    <label>输入：<input id="input" data-model="str"></label>
+    <label>输出：<span id="output"></span></label>
+    <script src="./test.js"></script>
+    <script>
+        new MVVM({
+            input: document.getElementById('input'),
+            output: document.getElementById('output'),
+            data: {
+                str: "hello World",
+            }
+        })
+    </script>
+</body>
+</html>

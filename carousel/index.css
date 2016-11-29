@@ -1,0 +1,74 @@
+.parent {
+    position: relative;
+    width: 490px;
+    height: 100px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.wrap {
+    /* 不能够指定width:100%; 否则设置负的margin-right无效 */
+    /*width: 100%;*/
+    /* margin-right的方式没办法实现动画，至少我现在不清楚 */
+    /*margin-right: -130px;*/
+
+    width: 10000px;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    -webkit-transition: left .3s ease-in;
+    -o-transition: left .3s ease-in;
+    transition: left .3s ease-in;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-color: #51d466;
+}
+
+.item + .item {
+    margin-left: 30px;
+}
+
+.item.last {
+    background-color: black;
+}
+
+/*.item:last-child { display: none; }*/
+.f-cb {
+    zoom: 1;
+}
+
+.f-cb:after {
+    content: '.';
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    height: 0;
+}
+
+.pointer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.pointer i {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #ddd;
+    cursor: pointer;
+
+}
+
+i.z-crt {
+    background-color: #999;
+}
