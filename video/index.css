@@ -1,0 +1,29 @@
+.main {
+    width: 750px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+#myVideo {
+    display: inline-block;
+    width: 640px;
+    height: 360px;
+}
+
+.side {
+    display: inline-block;
+    width: 100px;
+    height: 360px;
+    margin-top: -20px;
+    padding-left: 10px;
+}
+
+.item-side {
+    display: inline-block;
+    width: 100px;
+    height: 75px;
+    margin-top: 20px;
+    background-color: #999;
+}
+
+/*.item-side + .item-side {margin-top: 10px;}*/

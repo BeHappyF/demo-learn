@@ -126,6 +126,34 @@ var result = Rx.Observable.concat(timer, sequence);
 result.subscribe(x => console.log(x));
 ```
 
+<!-- 连接三个Observable -->
+```js
+var time1 = Rx.Observable.interval(1000).take(10);
+var time2 = Rx.Observable.interval(2000).take(6);
+var time3 = Rx.Observable.interval(500).take(10);
+var result = Rx.Observable.concat(time1, time2, time3);
+result.subscribe(x => console.log(x));
+```
+
 * * *
 
+#### create
+
+    public static create(subscribe: function(subscriber: Subscriber): TeardownLogic): Observable
+
+
+![](./image/create.png)
+
+##### 参数(一般无，有则是特意对参数做具体分析)
+
+
+##### 返回(同上)
+
+
+##### 例子
+
+```js
+```
+
+* * *
 
