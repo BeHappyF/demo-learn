@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>min-height</title>
+    <style>
+        html, body {
+            /* 这里需要设置height */
+            height: 100%;
+            margin: 0;
+        }
+        .content {
+            min-height: 100%;
+            /* 和footer的高度保持一致 */
+            margin-bottom: -50px;
+        }
+        footer {
+            height: 50px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        content
+    </div>
+    <footer>
+        footer
+    </footer>
+</body>
+</html>

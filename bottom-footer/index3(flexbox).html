@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flexbox</title>
+    <style>
+        html {height: 100%;}
+        body {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            /* 去除浏览器默认设置 */
+            margin: 0;
+        }
+        .content {flex: 1;}
+        footer {background-color: red;}
+    </style>
+</head>
+<body>
+    <div class="content">
+        content
+    </div>
+    <footer>footer</footer>
+</body>
+</html>

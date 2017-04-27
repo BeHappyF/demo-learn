@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contentmenu</title>
+    <style>
+        article, div, ul, li {margin: 0;padding: 0;}
+        article {
+            position: relative;
+            width: 300px;
+            height: 100px;
+            margin: 0 auto;
+        }
+        div {
+            line-height: 100px;
+            text-align: center;
+            background-color: #aaa;
+            color: #fff;
+        }
+
+        ul {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            line-height: 20px;
+            border: 1px solid #999;
+            background: #fff;
+            color: #666;
+            list-style: none;
+        }
+        .z-show {display: block;}
+        li:not(:last-child) {border-bottom: 1px solid #999;}
+    </style>
+</head>
+<body>
+    <article>
+        <div>鼠标右键区域自定义弹窗</div>
+        <ul>
+            <li>content1</li>
+            <li>content2</li>
+        </ul>
+    </article>
+    <script src="./index.js"></script>
+</body>
+</html>

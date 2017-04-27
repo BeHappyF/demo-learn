@@ -1,0 +1,39 @@
+@import 'theme/_test';
+
+nav {
+  border: {
+  style: solid;
+  width: 1px;
+  color: #ccc; // 这种注释内容不会出现在生成的css文件中
+  }
+}
+
+$link-color: blue;
+$link-color: red !default;
+a {
+    color: $link-color; /* 这种注释内容会出现在生成的css文件中 */
+}
+
+@mixin rounded-corners {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+
+notice {
+  background-color: green;
+  border: 2px solid #00aa00;
+  @include rounded-corners;
+}
+
+
+$color: white;
+@mixin colors($color: blue) {
+  background-color: $color;
+  @content;
+  border-color: $color;
+}
+.colors {
+  @include colors { color: $color; }
+}

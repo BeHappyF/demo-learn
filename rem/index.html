@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rem 实验</title>
+    <style>
+        /**
+         * rem兼容：
+         * Mozilla Firefox 3.6+、Apple Safari 5+、Google
+         * Chrome、IE9+和Opera11+著作权归作者所有。
+         */
+
+        /* 定义html为10px，chrome浏览器会因为最小渲染字体大小为12px，在控制台会显示为12px
+        ** 但是在rem的相对计算字体大小则是按照10px来算的。
+        *  除了设置10px（为了相对计算方便），还可以设置62.5%，相对于16px
+        *
+        *  补充：浏览器字体默认字体大小为16px */
+        html {font-size: 62.5%;}
+        body {font-size: 1.4rem;}
+        /*html {font-size: 1px;}
+        body {font-size: 14rem;}*/
+    </style>
+</head>
+<body>
+    <div>rem 测试</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DragDrop</title>
+    <style>
+        .contain {
+            width: 500px;
+            height: 300px;
+            background-color: skyblue;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="contain" draggable="true" ondragstart="dragStart(event)" ondrop="drop(event)" onclick="onClick(event)"></div>
+    <script>
+        /**
+         *  dragstart、dragend、click解析
+         *  触发顺序: dragstart -> dragend -> click
+         *  正常的点击事件也会是上述的触发顺序。即，如果监听了以上三种事件。那么无法区分。
+         *  如果将拖拽事件和点击事件区分，只有drag事件。
+         *  触发顺序: dragstart -> drag -> dragend -> click
+         *  其中,drag在其中会多次触发
+         */
+
+        // drapStart是在按下鼠标之后立即触发
+        function dragStart(event) {
+            console.log('dragStart');
+        }
+        function drop(event) {
+            console.log('drop');
+        }
+        // 鼠标点击-移动物体-松开鼠标，触发点击事件
+        function onClick(event) {
+            console.log('click');
+        }
+    </script>
+</body>
+</html>

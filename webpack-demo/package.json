@@ -1,0 +1,15 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {},
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "moment": "^2.17.1",
+    "webpack": "2.2.1"
+  }
+}

@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "Indie Flower";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Indie Flower"),local(IndieFlower),url(//fonts.gstatic.com/s/indieflower/v8/10JVD_humAd5zP2yrFqw6nZ2MAKAc2x4R1uOSeegc5U.eot?#) format("eot"),url(//fonts.gstatic.com/s/indieflower/v8/10JVD_humAd5zP2yrFqw6nhCUOGz7vYGh680lGh-uXM.woff) format("woff2"),url(//fonts.gstatic.com/s/indieflower/v8/10JVD_humAd5zP2yrFqw6nhCUOGz7vYGh680lGh-uXM.woff) format("woff");
+}
+
+.set_border {
+    border-size: 1px;
+    border-style: solid;
+    border-color: #ccc;
+}
+
+.crip_shorthand {
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 4rem;
+}
+
+body {
+  font-family: "Indie Flower";
+}
+
+.circle {
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    background-color: #c00;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translateX(-50%);
+}
+
+.circle_wrap {
+    position: relative;
+    height: 8rem;
+}
+
+.isosceles-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 4rem 0 4rem 7rem;
+    border-left-color: #c00;
+}
+
+a {
+    color: #4D9ACC;
+}
+
+a:visited {
+    color: #4D9ACC;
+}
+
+a:focus {
+    color: #4D9ACC;
+}
+
+a:hover {
+    color: #4D9ACC;
+}
+
+a:active {
+    color: #4D9ACC;
+}
+
+a {
+    color: #4D9ACC
+}
+
+a:visited {
+    color: #4D9ACC;
+}
+
+a:focus {
+    color: #4D9ACC;
+}
+
+a:hover {
+    color: #5BB8F4;
+}
+
+a:active {
+    color: #4D9ACC;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.clearfixed:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.clearfixed_legacy:before,
+.clearfixed_legacy:after {
+    content: '';
+    display: table;
+}
+
+.clearfixed_legacy:after {
+    clear: both;
+}
+
+.clearfixed_legacy {
+  zoom: 1;
+}
+
+.absolute {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 0;
+    left: 0;
+}
+
+.fixed_two_values {
+    position: fixed;
+    top: 2rem;
+    right: 1rem;
+    bottom: 2rem;
+    left: 1rem;
+}
+
+.relative_one_value {
+    position: relative;
+    top: 3rem;
+    right: 3rem;
+    bottom: 3rem;
+    left: 3rem;
+}
+
+.size_a {
+    width: 1rem;
+    height: 2rem;
+}
+
+.size_b {
+    width: 1rem;
+    height: 1rem;
+}
+
+.spacing {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.spacing_short {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.short_colors {
+    color: #232323;
+    background: #fff;
+    border-color: rgba(0, 0, 0, 0.5);
+}

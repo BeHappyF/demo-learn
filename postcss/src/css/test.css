@@ -1,0 +1,98 @@
+@alias {
+    bsz: border-size;
+    bst: border-style;
+    bcl: border-color;
+}
+
+.set_border {
+    bsz: 1px;
+    bst: solid;
+    bcl: #ccc;
+}
+
+.crip_shorthand {
+    mt: 1rem;
+    mr: 2rem;
+    mb: 3rem;
+    ml: 4rem;
+}
+
+body {
+  font-family: "Indie Flower";
+}
+
+.circle {
+    circle: 8rem #c00;
+    left: center;
+}
+
+.circle_wrap {
+    position: relative;
+    height: 8rem;
+}
+
+.isosceles-triangle {
+    triangle: pointing-right;
+    width: 7rem;
+    height: 8rem;
+    background-color: #c00;
+}
+
+a {
+    @link-colors all #4D9ACC;
+}
+
+a {
+    @link-colors all #4D9ACC {
+        hover: #5BB8F4;
+    }
+}
+
+.centered {
+  top: center;
+  left: center;
+}
+
+.clearfixed {
+  clear: fix;
+}
+
+.clearfixed_legacy {
+  clear: fix-legacy;
+}
+
+.absolute {
+    position: absolute 1rem 1rem 0 0;
+}
+
+.fixed_two_values {
+    position: fixed 2rem 1rem;
+}
+
+.relative_one_value {
+    position: relative 3rem;
+}
+
+.size_a {
+    size: 1rem 2rem;
+}
+
+.size_b {
+    size: 1rem;
+}
+
+.spacing {
+    padding-vert: 1rem;
+    margin-horz: 2rem;
+}
+
+.spacing_short {
+    pv: 3rem;
+    mh: 4rem;
+}
+
+.short_colors {
+    color: #23;
+    background: #f;
+    border-color: rgba(0, 0.5);
+}

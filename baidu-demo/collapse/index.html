@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>collapse-demo</title>
+    <style>
+        p, input {margin: 0;}
+        label {display: none;}
+        /* 当单选框为选中状态系显示对应的文案 */
+        input:checked + label {display: inline;}
+        input {
+            position: relative;
+            /**
+             * 本意是想让Input的默认圆圈选择框不显示，但是opacity设置有问题。
+             * 最后发现本不需要这样做，直接在:after伪元素内设置背景颜色即可
+             */
+            /* 这个设置会影响到他的伪元素:after,:before。而且在伪元素内设置opacity:1;不行 */
+            /*opacity: 0;*/
+            width: 100%;
+            vertical-align: top;
+        }
+        input:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            line-height: 30px;
+            border-radius: 3px;
+            padding-left: 20px;
+            background-color: white;
+        }
+        #name:after {content: 'Collapsible Group Item #1';}
+        #sex:after {content: 'Collapsible Group Item #2';}
+        #age:after {content: 'Collapsible Group Item #3';}
+        div {
+            min-height: 30px;
+            border: 1px solid red;
+            border-radius: 3px;
+            background: #fff;
+        }
+        div:not(:last-child) {margin-bottom: 10px;}
+        p {
+            margin-top: 20px;
+            border-top: 1px solid red;
+            line-height: 20px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="radio" name="info" id="name">
+        <label for="name"><p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p></label>
+    </div>
+    <div>
+        <input type="radio" name="info" id="sex">
+        <label for="sex"><p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p></label>
+    </div>
+    <div>
+        <input type="radio" name="info" id="age">
+        <label for="age"><p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p></label>
+    </div>
+</body>
+</html>

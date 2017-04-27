@@ -1,0 +1,36 @@
+.m-test2{
+	display:block;
+}
+.m-test2 div,.m-test2 ul{
+	border:2px solid #ccc;
+}
+.m-test2 div + div,.m-test2 ul + div{
+	margin-top:20px;
+}
+.m-test2 div >a,.m-test2 ul >a{
+	color:#fff;
+}
+.m-test2 div >a:hover,.m-test2 ul >a:hover{
+	text-decoration:none;
+}
+.m-test2 div >a ~ span,.m-test2 ul >a ~ span{
+	display:block;
+}
+.m-home{
+	display:block;
+}
+.m-home div,.m-home ul{
+	border:2px solid #ccc;
+}
+.m-home div + div,.m-home ul + div{
+	margin-top:20px;
+}
+.m-home div >a,.m-home ul >a{
+	color:#fff;
+}
+.m-home div >a:hover,.m-home ul >a:hover{
+	text-decoration:none;
+}
+.m-home div >a ~ span,.m-home ul >a ~ span{
+	display:block;
+}

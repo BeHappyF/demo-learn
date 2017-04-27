@@ -1,0 +1,27 @@
+:root {
+    --mainColor: #333;
+    --fontSize: 1.1rem;
+}
+
+body {
+    color: var(--mainColor);
+    font-size: calc(var(--fontSize) * 2);
+}
+
+/* autoprefixer */
+.display-flex {
+    display: flex;
+}
+
+/* CSS Grace */
+.display-inline-block {
+    display: inline-block;
+}
+
+.background-linear {
+    background: linear-gradient(red, green);
+}
+
+.background-rgba {
+    background: rgba(153, 85, 102, 0.3);
+}
