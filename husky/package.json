@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo hhhh",
+    "test": "echo aaa",
     "preparecommitmsg": "npm run test"
   },
   "keywords": [],
