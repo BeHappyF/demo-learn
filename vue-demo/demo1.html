@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue demo1</title>
+    <script src="vue@2.3.3.js"></script>
+</head>
+<body>
+    <div id="app">
+        <todo-item v-for="item in items" v-bind:todo="item"></todo-item>
+        <ul>
+            <li v-for="item in items"></li>
+        </ul>
+    </div>
+
+    <script>
+        Vue.component('todo-item', {
+            props: ['todo'],
+            template: '<li>{{todo.parentMessage}}</li>',
+        });
+        var app = new Vue({
+          el: '#app',
+          data: {
+            parentMessage: 'Parent',
+            items: [
+              { message: 'Foo', parentMessage: 'FooParent' },
+              { message: 'Bar', parentMessage: 'BarParent' }
+            ]
+          }
+        })
+    </script>
+</body>
+</html>
