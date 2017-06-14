@@ -1,0 +1,16 @@
+{
+  "name": "husky-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo hhhh",
+    "preparecommitmsg": "npm run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "0.13.4"
+  }
+}
